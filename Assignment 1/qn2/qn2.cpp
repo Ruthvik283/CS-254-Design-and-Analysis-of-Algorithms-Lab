@@ -6,22 +6,26 @@ using namespace std;
 #define mp make_pair
 
 int main(){
+
+        freopen("input.txt","r",stdin);
+        freopen("output.txt","w",stdout);
 		
 		ll n;cin>>n;
 
 		ll w[n],v[n];
 
 		ll max_weight;
-        cout<<"Enter weights"<<endl;
+        cin>>max_weight;
+        //cout<<"Enter weights"<<endl;
 		for(ll i=0;i<n;i++){
 			cin>>w[i];
 		}
-        cout<<"Enter corresponding values"<<endl;
+        //cout<<"Enter corresponding values"<<endl;
 		for(ll i=0;i<n;i++){
 			cin>>v[i];
 		}
 
-		cin>>max_weight;
+		
 
 		ll dp[max_weight+1]={0};
         //instead of creating a 2-D dp array, another 1-D dp array is created for the purpose of storing the previous row values and space complexity has been optimized
