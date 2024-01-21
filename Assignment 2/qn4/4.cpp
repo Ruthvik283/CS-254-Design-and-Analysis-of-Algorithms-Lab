@@ -9,8 +9,8 @@ ll loc_pivot(ll *a ,ll l ,ll r){
     //choosing a random pivot using rand() function to minimize the occurance of worst case
     ll p=(rand()%(r-l+1));
     swap(a[r],a[l+p]);
+    ll y=a[r];    
 
-    ll y=a[r];
     ll i=l,j=l;
     while(j<r){
         if(a[j]<y){
@@ -23,7 +23,7 @@ ll loc_pivot(ll *a ,ll l ,ll r){
     return i;
 }
 
-
+//creating a local variable e to keep track of location of median-1 element
 ll e=INT_MAX;
 
 ll find_median(ll *a,ll l,ll r,ll m){
