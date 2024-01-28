@@ -2,3 +2,6 @@
 .vscode
 *.py
 toutput.txt
+boilerplate.cpp
+test.cpp
+test2.cpp
