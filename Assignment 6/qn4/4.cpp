@@ -14,8 +14,8 @@ int main(){
     vector<int>v[n];
     for(int i=0;i<e;i++){
         int x,y;cin>>x>>y;
+        x--,y--;
         v[x].pb(y);
-        v[y].pb(x);
     }
     vector<int>indeg(n,0);
     for(int i=0;i<n;i++){
@@ -43,7 +43,6 @@ int main(){
     for(auto x:indeg){
         if(x!=0)hasCycle=1;
     }
-
     cout<<(hasCycle?"YES":"NO")<<endl;
 
     return 0;
