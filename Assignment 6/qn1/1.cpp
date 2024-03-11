@@ -16,7 +16,6 @@ int main(){
         int x,y;cin>>x>>y;
         x--,y--;
         v[x].pb(y);
-        v[y].pb(x);
     }
     vector<int>indeg(n,0);
     for(int i=0;i<n;i++){
